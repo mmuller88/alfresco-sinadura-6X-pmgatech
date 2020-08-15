@@ -16,6 +16,6 @@ COPY log4j.properties $TOMCAT_DIR/webapps/share/WEB-INF/classes
 COPY hotswap-agent.properties $TOMCAT_DIR/webapps/share/WEB-INF/classes
 
 # Fix https://github.com/zylklab/alfresco-sinadura/issues/9
-COPY fix/*.js $TOMCAT_DIR/webapps/share/components/preview/pdfjs
+COPY fix/*.js $TOMCAT_DIR/webapps/share/components/preview/pdfjs/
 
 # COPY amps/*.amp $TOMCAT_DIR/amps_share/

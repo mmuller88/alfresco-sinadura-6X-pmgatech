@@ -33,8 +33,8 @@ public class UploadSignedContentWebscript extends AbstractWebScript {
 	private ServiceRegistry registry;
 	private PropertiesManager propertiesManager;
 
-	private final static QName PROP_FIRMADO = QName.createQName("{zylk.sign.model}firmado");
-	private final static QName ASSOC_SIGNED_BY = QName.createQName("{zylk.sign.model}signedBy");
+	// private final static QName PROP_FIRMADO = QName.createQName("{zylk.sign.model}firmado");
+	// private final static QName ASSOC_SIGNED_BY = QName.createQName("{zylk.sign.model}signedBy");
 	
 	
 	@Override	
@@ -102,7 +102,7 @@ public class UploadSignedContentWebscript extends AbstractWebScript {
 			registry.getNodeService().addAspect(nodeRef, ContentModel.ASPECT_VERSIONABLE, null);
 		}
 
-		registry.getNodeService().setProperty(nodeRef, PROP_FIRMADO, true);
+		// registry.getNodeService().setProperty(nodeRef, PROP_FIRMADO, true);
 	}
 	
 	
@@ -154,9 +154,9 @@ public class UploadSignedContentWebscript extends AbstractWebScript {
 		writer.putContent(isContent);
 		
 		// crear la asociacion
-		nodeService.createAssociation(nodeRef, signatureNodeRef, ASSOC_SIGNED_BY);
+		// nodeService.createAssociation(nodeRef, signatureNodeRef, ASSOC_SIGNED_BY);
 		
-		registry.getNodeService().setProperty(nodeRef, PROP_FIRMADO, true);
+		// registry.getNodeService().setProperty(nodeRef, PROP_FIRMADO, true);
 	}
 	
 
