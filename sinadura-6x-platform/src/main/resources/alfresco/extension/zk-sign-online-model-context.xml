@@ -3,21 +3,6 @@
 
 <beans>
 
-    <!-- Registration of new models -->
-    <!-- <bean id="extension.dictionaryBootstrapZKSign" parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap">
-        <property name="models">
-            <list>
-                <value>alfresco/extension/model/signModel.xml</value>
-            </list>
-        </property>
-        <property name="labels">
-            <list>
-                <value>alfresco/extension/model/signModel</value>
-            </list>
-        </property>
-    </bean> -->
-
-
     <bean id="webscript.net.zylk.zk-upload-signed-content.post"
           class="net.zylk.sign.online.webscripts.UploadSignedContentWebscript"
           parent="webscript">
