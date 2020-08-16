@@ -37,47 +37,6 @@
               </actionGroups>
 
             </config>
-
-            <config evaluator="string-compare" condition="DocumentLibrary">
-              <aspects>
-                <visible>     
-                  <aspect name="sign:firmable" />
-                </visible>
-
-                <addable>
-                </addable>
-
-                <removeable>
-                </removeable>
-              </aspects>
-
-              <indicators>
-                <indicator id="zk-signed" index="9">
-                  <evaluator>zk-evaluator.doclib.action.hasFirmableAspect</evaluator>
-                </indicator>
-              </indicators>
-
-              <multi-select>
-                    <action type="action-link" id="onActionZKSignOnline" asset="document" label="menu.selected-items.sign" />
-                  </multi-select>
-
-            </config>
-
-            <config evaluator="aspect" condition="sign:firmable">
-              <forms>
-                <form>
-                  <field-visibility>
-                    <show id="sign:firmado" />
-                  </field-visibility>
-                  <appearance>
-                    <set id="firma_panel" appearance="bordered-panel" label-id="zk.label.aspect.sign.info" />
-                    <field id="sign:firmado" set="firma_panel" read-only="true" label-id="zk.label.aspect.property.signed"/>
-                  </appearance>
-                </form>
-              </forms>
-            </config>
-
-
          </configurations>
       </module>
    </modules>
