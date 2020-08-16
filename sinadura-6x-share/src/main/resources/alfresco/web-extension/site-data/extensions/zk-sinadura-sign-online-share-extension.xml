@@ -19,7 +19,7 @@
                 <action id="zk-sign-online" type="javascript" label="zk.label.sign.online"
                   icon="zk-sign-online">
                   <param name="function">onActionZKSignOnline</param>
-                  <!-- evaluator>zk-evaluator.doclib.action.signOnline</evaluator> -->
+                  <evaluator>zk-evaluator.doclib.action.signOnline</evaluator>
                   <permissions>
                     <permission allow="true">Write</permission>
                   </permissions>
