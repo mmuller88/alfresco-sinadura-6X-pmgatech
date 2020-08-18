@@ -25,7 +25,14 @@
                   </permissions>
                 </action>
               </actions>
-
+              
+            <config evaluator="string-compare" condition="DocumentLibrary">
+                  <multi-select>
+                    <action type="action-link" id="onActionZKSignOnline" asset="document" label="menu.selected-items.sign" />
+                  </multi-select>
+            </config>
+               
+              
               <actionGroups>
                 <actionGroup id="document-browse">
                   <action index="105" id="zk-sign-online" />
