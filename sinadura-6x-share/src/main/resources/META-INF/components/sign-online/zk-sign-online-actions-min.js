@@ -102,7 +102,7 @@
 											// PDF
 											// no se como se lee del bundle de i18n desde aqui, asi q de momento dejo el literal hardcode.
 											Alfresco.util.PopupManager.displayMessage({
-					                        	text: 'No es posible firmar documentos y PDFs a la vez.'
+					                        	text: 'It is not possible to sign documents and PDFs at the same time.'
 					                        });
 					                        
 										} else {
@@ -161,7 +161,7 @@
 													window.location.reload();
 												}, 
 												function() {
-													alert("Se ha producido un error inesperado al firmar los documentos");
+													alert("An unexpected error occurred while signing documents");
 												});
 												
 												
@@ -174,7 +174,7 @@
 									},
 					              scope: this
 					            },
-					          failureMessage: "Error al obtener el ticket"
+					          failureMessage: "Failed to get ticket"
 					        });
 					
 	
